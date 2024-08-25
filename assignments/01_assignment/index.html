@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <!--By Matthew Olson, csce 242 section 001-->
 <html>
+<!--Added a style for the table to make it have lines to seperate it-->
+<style>
+    table, th, td {
+       border:1px solid black;
+    }
+</style>
     <head>
-        <title>T-28 American Tank</title>
+        <!--Name of the site-->
+        <title>National Parks across America</title>
     </head>
     <body>
+        <!--A link to be able to return to the assignments main menu-->
         <a href="https://olsonm81.github.io/">Back to assignments</a>
-        <h1>America's T-28</h1>
-        <h2>The T-28's purpose</h2>
-        <p>This was one of the few American tanks that were constructed
-            during WW2 that never saw any battles. It's purpose was to be
-            used in the eastern front against the German Forces in trying
-            to destory bunkers. During the development stages of the tank, 
-            the Allied Forces had won in the eastern front causing this tank 
-            to never be used in battle. It was supposed to be used later on during
-            the conflcits with Japan, but they had surrended before it was put to use.
+        <!--Main header of the website-->
+        <h1>National Parks across America</h1>
+        <!--Sub header for the site for the topic of the Grand Canyon-->
+        <h2>Grand Canyon</h2>
+        <!--Four sentences about the Grand Canyon-->
+        <p>The Grand Canyon National Park is located in Arizona. It is home to many different species of plants and animals. 
+            This National Park was formed by long term erosion. This Canyon is estimated to be 250 million
+            years old.
         </p>
-        <img src="images/T28.jpg" alt="Comparison of T-28 tank to another american tank of that time period"> <br>
-        <h2>Interesting facts about the T-28</h2>
-        <p>This tank has some distint features that set it apart from 
-            other American tanks that were produced during that time period.
-            One of the features were the tracks on the tank. Unlike most tanks and 
-            even modern ones today, the T-28 has a dual track. This could be useful 
-            when going through tough terrain.
+        <!--Top 3 Animals at Grand Canyon National Park-->
+        <h3>Top 3 Animals found here</h3>
+        <ol>
+            <li>Bighorn Sheep</li>
+            <li>California Condor</li>
+            <li>Tassel-Eared Squirrel</li>
+        </ol>
+        <!--Picture of the Grand Canyon-->
+        <!--Added a style to ensure the image was not to big-->
+        <img src="images/GrandCanyon.jpg" alt="Picture of the Grand Canyon" style="width: 600px;height:400px;"> <br>
+        <!--Sub header for the site for the topic of the Grand Canyon-->
+        <h2>Yellowstone National Park</h2>
+        <!--Four sentences about Yellowstone National Park-->
+        <p> Yellowstone was America's first National Park. It's mostly located in Wyoming, but parts of the park 
+            also spread into Montana and Idaho. One of the parks most well known attraction is Old Faithful which 
+            is one of the geysers in the park. Along with the geysers Yellowstone is also known for its local wildlife.
         </p>
-        <img src="images/T28_Super_Heavy_Tank_US_Army_Armor_&_Cavalry_Collection.jpg" alt="Image of the T-28 tank"> <br>
+        <!--Top 3 Animals at Yellowstone National Park-->
+        <h3>Top 3 Animals found here</h3>
+        <ol>
+            <li>Bison</li>
+            <li>Grizzly Bear</li>
+            <li>Gray Wolves</li>
+        </ol>
+        <!--Picture of Yellowstone National Park-->
+        <!--Added a style to ensure the image was not to big-->
+        <img src="images/OldFaithful.jpg" alt="Image of Old Faithful" style="width: 600px;height:400px;"> <br>
+
         <h2>More information</h2>
-        <p>Below are some webites where you are able to find more information on the 
-            T-28 tank.
+        <p>
+            A Table that can provide some comparisons between the two National Parks.
         </p>
+        <!--Two columns as National Parks, with rows as square miles, 
+        number visits yearly, and year establish-->
+        <!--Added width to ensure that all of the information was able to fit inside of the table-->
+        <table style="width:60%">
+            <tr>
+                <!--First one left blank since there are only two national parks-->
+                <th></th>
+                <th>Grand Canyon</th>
+                <th>Yellowstone</th>
+            </tr>
+            <tr>
+                <!--Ordered by the <th> (topic/subject) then both <td>'s (information related to topic/subject) 
+                    are the information relating to each park-->
+                <th>Square Miles</th>
+                <td>1,904 square miles</td>
+                <td>3,472 square miles</td>
+            </tr>
+            <tr>
+                <th>Yearly Visits</th>
+                <td>5 million</td>
+                <td>4 million</td>
+            </tr>
+            <tr>
+                <th>Year Establish as a National Park</th>
+                <td>February, 19 1919</td>
+                <td>March 1, 1872</td>
+            </tr>
+        </table>
+        <p> Below are some webites where you are able to find more information on the Grand Canyon and 
+            Yellowstone National Park.
+        </p>
+        <!--Below is a list of two other sites where you can find information on the parks-->
         <ul>
             <li>
-                <a href="https://tankhistoria.com/experimental/super-heavy-tank-t28/">Superheavy Tank T28</a>
+                <!--Site for more information on the Grand Canyon-->
+                <a href="https://www.nps.gov/grca/index.htm">National Park Website - Grand Canyon</a>
             </li>
             <li>
-                <a href="https://www.militaryfactory.com/armor/detail.php?armor_id=331">T28 Super Heavy Tank</a>
+                <!--Site for more information on Yellowstone National Park-->
+                <a href="https://www.nps.gov/yell/index.htm">National Park Website - Yellowstone National Park</a>
             </li>
         </ul>
-        
-
     </body>
 </html>
