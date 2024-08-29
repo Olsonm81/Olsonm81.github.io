@@ -1,0 +1,60 @@
+/*Structure*/
+body {
+    background: #888D8C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title-author {
+    padding:5px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+#intro {
+    margin: auto;
+    padding:5px;
+    background-color: #C1B6B2;
+    width: 1400px;
+    border: 5px solid #2B3942;
+    text-align: center;
+    border-radius: 5px;
+}
+#assignments {
+    text-align: center;
+    width:20%;
+    margin: 25px auto;
+    padding: 10px;
+    background-color: #C1B6B2;
+    border: 5px solid #2B3942;
+    border-radius: 5px;
+}
+#assignments li {
+    list-style-position: inside;
+}
+/*Navagation*/
+#links a {
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#links a:visited {
+    color:#272321;
+}
+
+#links a:hover{
+    background-color:#C1B6B2;
+    color:#272321;
+    text-decoration: none;
+}
+/*Typography*/
+h1 {
+    color:#272321;
+}
+
+h2 {
+    color:#272321;
+}
+
+p {
+    font-size: large;
+    color:#272321;
+}
