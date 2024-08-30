@@ -1,8 +1,101 @@
+/*By Matthew Olson, csce 242 section 001*/
 /*Structure*/
 body {
     background: tan;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Navagation*/
+/*Removes undetlines and centers text*/
+#main-nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding:0px;
+}
+/*Made boxes for links bigger*/
+#main-nav li {
+    display: inline-block;
+    font-size: large;
+    padding:10px;
+}
+/*For the default link I wanted it to have a color scheme that matched the background of the page*/
+#main-nav a:link, a:visited {
+    background-color:#E6DCBE;
+    border: 2px solid black;
+    color:black;
+    text-align: center;
+    padding :10px;
+    text-decoration: none;
+}
+/*When hovering over it changes the color of the background and text*/
+#main-nav a:hover, a:active {
+    color:black;
+    background-color:#FFF5DC;
+}
 
 /*Typography*/
+/*Wanted main header to just have an underline while sub-headers (h2) having a border and background*/
+h1 {
+    text-align: center;
+    border-bottom: solid black;
+    display: inline-block;
+}
+
+h2 {
+    text-align:center;
+    background-color: #FFF5DC;
+    margin: 20px auto;
+    margin-bottom: 0%;
+    border: solid black;
+    display: inline-block;
+
+}
+p {
+    background-color: #E6DCBE;
+    border: solid black;
+    width:1000px;
+    margin: 25px auto;
+}
+/*Gave table its lines, background color and width of the boxes*/
+table, th, td {
+    border:3px solid black;
+    background-color: #B0967C;
+    padding:auto;
+    width:1000px;
+    margin:auto;
+ }
+ /*Wanted to haave seperate background colors to make a clear difference between the header cells and data cells*/
+ th {
+    background-color: #FFF5DC;
+ }
+ td {
+    background-color: #E6DCBE;
+ }
+ 
+/*Media Queries*/
+/*Apply to 400px and larger*/
+@media only screen and (min-width:400px){
+    /*Used just for images as a way to style and keep the images centered*/
+    .center {
+        display:block;
+        border: solid 5px black;
+        margin-left:auto;
+        margin-right:auto;
+        padding:5px;
+        background-color:#B0967C;
+        width: 600px;
+        height:400px;
+    }
+    /*Used with all headers to ensure that they are centered and have good alignment*/
+    .header {
+        width:80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*Centers the data in the description column of the table*/
+    .description {
+        text-align: center;
+    }
+}
+    

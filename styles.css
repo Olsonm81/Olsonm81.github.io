@@ -3,12 +3,14 @@ body {
     background: #888D8C;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*Added padding to give it some more space, centered the title, and added margin space*/
 #title-author {
     padding:5px;
     text-align: center;
     margin: auto;
-    border-radius: 5px;
 }
+/*Added padding and margins for spacing, change background and border color to match color 
+scheme, changed width, entered to make page more appealing, and rounded the edges*/
 #intro {
     margin: auto;
     padding:5px;
@@ -18,6 +20,8 @@ body {
     text-align: center;
     border-radius: 5px;
 }
+/*Centered list, added padding and margins to adjust spacing, change colors of border and 
+background, added rounded edges to border and changed width to make the box a reasonable size*/
 #assignments {
     text-align: center;
     width:20%;
@@ -27,25 +31,43 @@ body {
     border: 5px solid #2B3942;
     border-radius: 5px;
 }
+/*Used to center the numbered list*/
 #assignments li {
     list-style-position: inside;
 }
 /*Navagation*/
+/*Made links more appealing with affects when you hover link, click on and removed underlines*/
 #links a {
     text-decoration: none;
     border-radius: 5px;
+    color: #272321;
+    text-align: center;
+    padding:auto;
+    border: solid black;
+}
+#links li {
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+}
+#links ul {
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+    padding:0;
 }
 
 #links a:visited {
-    color:#272321;
+    color:purple;
 }
 
-#links a:hover{
-    background-color:#C1B6B2;
+#links a:hover, a:visited{
+    background-color:#888D8C;
     color:#272321;
     text-decoration: none;
 }
 /*Typography*/
+/*added a base color and font size that I wanted the text to be*/
 h1 {
     color:#272321;
 }
@@ -56,5 +78,5 @@ h2 {
 
 p {
     font-size: large;
-    color:#272321;
+    color:rgb(44, 29, 29);
 }

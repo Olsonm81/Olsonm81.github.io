@@ -1,16 +1,84 @@
 <!DOCTYPE html>
+<!--By Matthew Olson, csce 242 section 001-->
 <html>
+    <!--Link to stylesheet and title of website-->
     <head>
         <link rel="stylesheet" href="styles.css">
-        <title>World Wonders</title>
+        <title>Pyramids of Giza</title>
     </head>
     <body>
-        <a href="../../index.html">Back to assignment</a>
-        <h1>World Wonders around the Globe</h1>
-        <p>Giza pramids</p>
-        <div id="main-site">
-            <h1>test1</h1>
-            <nav id="main-nav"></nav>
+        <!--Created class for headers just to standardize how I wanted to center them-->
+        <div class="header">
+            <h1>Pyramids of Giza</h1>
         </div>
+        <!--Main nav, that has the links back to the main assignments page and the top of the current page-->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <h2>Tourism at the Pyramids</h2>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel molestie purus. Sed hendrerit ac nisl at semper. Cras iaculis 
+            lacus sed turpis pellentesque semper. Curabitur tincidunt viverra sodales. Nunc tincidunt nisl at nisl dignissim porta. 
+            Integer vehicula volutpat ex, nec tempus massa sagittis quis. Suspendisse potenti. Vestibulum dictum eget nisl in consectetur. 
+            Sed sodales risus vitae sollicitudin porttitor. Praesent aliquam diam volutpat libero lobortis, blandit rutrum augue cursus. In eu 
+            condimentum odio. Mauris a orci libero. Cras nec congue orci. Proin sit amet fermentum felis. Nullam id lobortis dolor, et ornare mi. 
+        </p>
+        <!--In images I created a class called center which centers the image and provides it with some border and background in the styles.css file-->
+        <img src="images/tourist_at_pyramids.jpg" alt="Tourist gather to see Pyramids of Giza" class="center"> <br>
+        <div class="header">
+            <h2>Construction of Pyramids</h2>
+        </div>
+        <p>
+            Nulla a sapien eget ipsum mollis commodo vitae eget urna. Aliquam vitae tincidunt erat. Nulla at nisl sodales, vestibulum dui auctor, 
+            vehicula metus. Sed ac lectus ex. Ut sem leo, gravida ut rhoncus sit amet, accumsan eget orci. Aliquam maximus, ex quis lobortis tempor, 
+            elit nisi convallis quam, et egestas erat diam viverra ex. Aenean mattis at mauris ac lacinia. Duis non turpis nisl. Class aptent taciti 
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed cursus imperdiet massa eu pellentesque. Quisque ut nisl eget 
+            sem efficitur mollis. Nunc vel massa sit amet ipsum venenatis interdum ut id enim. Nulla finibus mauris sed dictum aliquet. Vestibulum sit 
+            amet ante nisl. Pellentesque aliquet et ligula eu iaculis. 
+        </p>
+        <img src="images/pyramidswithcamel.jpg" alt="Giza Pyramids with camels infront" class="center"> <br>
+        <!--Table that contains 3 columns and 5 rows of information about the giza pyramids-->
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <th>Alignment with True North</th>
+                <!--For the description column since there was so little text I wanted to center just that column which is why I made it a class-->
+                <td class="description">3/60th of a degree off</td>
+                <td>The Pyramids have a near prefect alignment, showing that the egyptians had some kind of 
+                    advanced knowledge of the stars</td>
+            </tr>
+            <tr>
+                <th>Limestone Bricks</th>
+                <td class="description">144,000</td>
+                <td>These were once highly polished and could relect sunlight. Today there are mostly lost or damaged</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td class="description">137 meters</td>
+                <td>Due to ersion that occured overtime of the limestone. It has caused the pyramids to drop to 137 meters from the 147 that it once was</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td class="description">5.7 million tons</td>
+                <td>Being comprised of over 2.3 million blocks with each weighting around 3 tons each</td>
+            </tr>
+            <tr>
+                <th>Tourist vists yearly</th>
+                <td class="description">14 million yearly</td>
+                <td>As being one of the wonders of the world this sight is one to behold which is why many travel to see it</td>
+            </tr>
+        </table>
     </body>
 </html>
