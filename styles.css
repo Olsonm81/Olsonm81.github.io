@@ -57,10 +57,6 @@ background, added rounded edges to border and changed width to make the box a re
     padding:0;
 }
 
-#links a:visited {
-    color:purple;
-}
-
 #links a:hover{
     background-color:#888D8C;
     color:#272321;
