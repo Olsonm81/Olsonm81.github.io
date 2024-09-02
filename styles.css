@@ -3,11 +3,17 @@ body {
     background: #888D8C;
     font-family: Arial, Helvetica, sans-serif;
 }
+#main-footer {
+    text-align: left;
+}
 /*Added padding to give it some more space, centered the title, and added margin space*/
 #title-author {
     padding:5px;
     text-align: center;
     margin: auto;
+}
+#assign-title h2 {
+    text-align: center;
 }
 /*Added padding and margins for spacing, change background and border color to match color 
 scheme, changed width, entered to make page more appealing, and rounded the edges*/
@@ -20,52 +26,10 @@ scheme, changed width, entered to make page more appealing, and rounded the edge
     text-align: center;
     border-radius: 5px;
 }
-/*Centered list, added padding and margins to adjust spacing, change colors of border and 
-background, added rounded edges to border and changed width to make the box a reasonable size*/
-#assignments {
-    text-align: center;
-    width:20%;
-    margin: 25px auto;
-    padding: 10px;
-    background-color: #C1B6B2;
-    border: 5px solid #2B3942;
-    border-radius: 5px;
-}
-/*Used to center the numbered list*/
-#assignments li {
-    list-style-position: inside;
-}
-/*Navagation*/
-/*Made links more appealing with affects when you hover link, click on and removed underlines*/
-#links a {
-    text-decoration: none;
-    border-radius: 5px;
-    color: #272321;
-    text-align: center;
-    padding:auto;
-    border: solid black;
-}
-#links li {
-    display: inline-block;
-    padding: 5px;
-    font-size: large;
-}
-#links ul {
-    list-style-type: none;
-    text-align: center;
-    margin:0;
-    padding:0;
-}
-
-#links a:hover{
-    background-color:#888D8C;
-    color:#272321;
-    text-decoration: none;
-}
 /*Typography*/
-/*added a base color and font size that I wanted the text to be*/
 h1 {
     color:#272321;
+    text-align: center;
 }
 
 h2 {
@@ -75,4 +39,73 @@ h2 {
 p {
     font-size: large;
     color:rgb(44, 29, 29);
+}
+/*flex boxes*/
+/*.assignment-flex works to make sure that the size of the boxes are around the same and the text inside is centered*/
+.assignment-flex {
+    margin: 10px;
+    padding:20px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+/*used to change the div inside which affects the color and spacing while also making a black border around the assignments*/
+.assignment-flex > div {
+    background-color: #C1B6B2;
+    border: solid 2px #272321;
+    width:300px;
+    margin:10px;
+    padding-left: 25px;
+    padding-right:25px;
+}
+/*For the title inside each assignment*/
+.assignment-flex > div strong p {
+    font-size: larger;
+    text-align: center;
+}
+/*removes the underline*/
+.assignment-flex > div a {
+    text-decoration: none;
+}
+/*centers the image and keeps it all the same size*/
+.assignment-flex > div img {
+    width:300px;
+    height:150px;
+    display: block;
+}
+/*title-name allows for the name to be in the top right then moved back to the center once small*/
+.title-name {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title-name h1 {
+    text-align: center;
+    order: 2;
+}
+.title-name h2 {
+    font-size: medium;
+    text-align: left;
+    order:1;
+    padding: 5px;
+    margin:10px;
+}
+/*Media Quaries*/
+@media only screen and (max-width:600px){
+    /*Moves the name to the center like how the assignment had it when the screen became small*/
+    .title-name {
+        text-align: center;
+        flex-direction: column;
+     }
+     .title-name h1 {
+        order: 1;
+     }
+     .title-name h2 {
+        order: 2;
+        text-align: center;
+     }
+     /*Moves all of the assingments to the center in one column*/
+     .assignment-flex {
+        flex-direction: column;
+     }
 }

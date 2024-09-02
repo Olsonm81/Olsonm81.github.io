@@ -1,0 +1,189 @@
+/*Structure*/
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #2D83A6;
+}
+
+/*Navigation*/
+/*.navbar works to center the navagation bar and ensuring that its able to spand the entire top row of the page*/
+.navbar ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 0%;
+    margin-left: 0%;
+    justify-content: center;
+
+}
+/*Made boxes for links bigger and add's border as a way to seperate each one like in the picture*/
+.navbar li {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    border-right: 22px solid #2D83A6;
+}
+.navbar a {
+    display:block;
+    width:100%;
+}
+/*I wanted it to have a different color and no underline under the link*/
+.navbar a:link{
+    background-color:gray;
+    text-align: center;
+    padding :10px;
+    text-decoration: none;
+
+}
+/*Made it so when hovering it changes the color of the box*/
+.navbar a:hover, a:active{
+    color:black;
+    background-color:white;
+}
+/*Changed to black because I thought it matched the color of the page better then purple*/
+.navbar a:visited {
+    color:black;
+}
+/*Made sure it has a matching color*/
+.main-content {
+    background-color: #15475a;
+}
+/*Gave some space to the tiles and centered. Also ensured it had flex*/
+.titles {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+/*Made sure each was had the right alignment and that the text was centered and spaced correctly*/
+.title-context{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: left;
+   width: calc(25% - 15px);
+   
+}
+.title-context h2 {
+    margin-bottom: 10px;
+}
+.title-context img {
+    max-width: 100%;
+}
+/*I tried many times to get this on the right side, but was unable to figure it out. I was running
+  into issues where it would be on the right side, but then the titles would be messed up or in the wrong order,
+  so I just left it. If you could in the comment of the assignment try to help me solve it that would be great, 
+  thank you.*/
+/*Made the background gray to match the color and added padding*/
+.links {
+    background-color: gray;
+    padding:20px;
+    flex:1;
+    min-width: 200px;
+}
+/*Removes the underline*/
+.links a {
+    text-decoration: none;
+}
+/*Makes it centered under the title*/
+.links ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.links li {
+    list-style-type: none;
+    padding:0;
+    
+}
+/*Wraps all the ideas once reaches a certain length, and added spacing at the bottom*/
+.all-ideas {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* makes the images centered and space on the bottom*/
+.all-ideas img {
+    margin-right:auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+/*makes the width for the text be just enough to not mess up the wrapping*/
+.idea {
+    max-width:85%;
+    padding-bottom: 10px;
+}
+#copyright{
+    text-align: center;
+}
+
+/*Typography*/
+h1 {
+    text-align: center;
+}
+/*Media Query*/
+@media only screen and (max-width:600px) {
+    /*.navbar changes the navigation bar once it reaches that 600px to a column that goes across the entire page*/
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding:0;
+        
+    }
+    .navbar li {
+        border-bottom:1px solid black;
+        box-sizing: border-box;
+        width:100%;
+    }
+    /*Changes the titles from rows to one long column that is centered*/
+    .main-content {
+        flex-direction: column;
+    }
+    .titles {
+        align-items: center;
+        flex-direction: column;
+    }
+    .title-context {
+        width:100%;
+        text-align: center;
+    }
+    .titles img {
+        width:200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titles h2 {
+        text-align: center;
+    }
+    /*places the link at the bottom (although its already there)*/
+    .links {
+        width: 100%;
+        order: 8;
+    }
+    .links ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    /*Ensures that the ideas are centered and in one column in the correct order*/
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #main-footer img {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #main-footer article {
+        padding: 20px;
+    }
+    
+}

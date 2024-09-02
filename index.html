@@ -6,32 +6,38 @@
         <title>Main Page</title>
     </head>
     <body>
+        <header>
         <!--Created this div to make changes to the title of the main page-->
-        <div id="title-author">
-             <h1>CSCE 242: Web Applications</h1>
-             <h2>By: Matthew Olson</h2>
-        </div>
-        <!--Created this div to make the paragraph have its own box and background color-->
-        <div id="intro">
-            <p>
-             This class is a website design course. It goes over many languages such as 
-             JavaScript, HTML, CSS, and more. The purpose is to use these to learn web 
-             technologies to create websites and different client-server applications.
-            </p>
-        </div>
-        <!--Made this div and nav to clean up the assignment list and made the links look nicer-->
-        <div id="assignments">
+            <div class="title-name"  id="title-author">
+                <h2>Matthew Olson</h2>
+                <h1>CSCE 242: Web Applications</h1>
+            </div>
+        </header>
+        <div id="assign-title">
             <h2>Assignments</h2>
-            <nav id="links">
-                <ul>
-                    <li>
-                        <a href="assignments/01_assignment/index.html">Assignment 01 page</a>
-                    </li>
-                    <li>
-                        <a href="assignments/02_assignment/index.html">Assignment 02 page</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <!--Class contains all of the assignments inside which allows for easier formating in CSS-->
+        <div class="assignment-flex">
+            <!--Used the <strong> to make the Assignment 1, 2, 3 titles to be bigger and different from the other <p> which was the description of the assignment-->
+            <div><strong><p>Assignment 1 - Basic HTML</p></strong><a href="assignments/01_assignment/index.html">
+                <!--For each img, I thought it would be cool to add an actual image that was from the assignment-->
+                <img src="assignments/01_assignment/images/OldFaithful.jpg" alt="Image of Old Faithful at Yellowstone National Park">
+                <p>The first assignment was working to make a website using basic HTML code. For this website I made it about 
+                    two National Parks which were Yellowstone National Park and the Grand Canyon.</p></a></div>
+        
+            <div><strong><p>Assignment 2 - Basic CSS</p></strong><a href="assignments/02_assignment/index.html">
+                <img src="assignments/02_assignment/images/tourist_at_pyramids.jpg" alt="Image of tourist at the pyramids in Giza">
+                <p>For the second assignment I worked with combining both HTML and CSS. For this website I made it about the pyramids
+                    in Giza.</p></a></div>
+
+            <div><Strong><p>Assignment 3 - Page layout</p></Strong><a href="assignments/03_assignment/index.html">
+                <img src="assignments/03_assignment/images/assignment-picture.png" alt="Placeholder image">
+                <p>For the third assignment I worked with flexboxes to make a copy of a picture of a website layout. This website
+                    would change depending on the screen size of the device viewing it.</p></a></div>
+        </div>
+        <!--Footer contains copyright-->
+        <footer id="main-footer">
+            <p>&copy; Matthew Olson</p>
+        </footer>
     </body>
 </html>
