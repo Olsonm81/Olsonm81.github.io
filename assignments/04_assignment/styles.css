@@ -1,0 +1,355 @@
+/*Structure*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    max-width:100%;
+}
+/*headers*/
+.top-header {
+    background-color: black;
+    padding:auto;
+    margin:auto;
+}
+.top-header img {
+    display:inline;
+}
+/*Navagation*/
+/*#main-menu is the main navagation bar at the top of the page*/
+/*changes to flex to make them all in a line and centers them*/
+#main-menu ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    margin:0;
+    padding-left: 0%;
+    margin-left: 0%;
+    justify-content: center;
+
+}
+#main-menu li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#main-menu a {
+    display:block;
+    width:100%;
+    color:white;
+}
+
+#main-menu a:link{
+    background-color:rgb(138, 18, 18);
+    text-align: center;
+    padding :10px;
+    text-decoration: none;
+}
+/*Made a different shade when hovering over it*/
+#main-menu a:hover, a:active{
+    background-color:rgb(90, 15, 15);
+}
+
+#main-menu a:visited{
+    color:white;
+}
+/*Made img strech across page*/
+#body-info img {
+    margin:0;
+    width: 100%;
+}
+/*Made the main text bigger, while also being relative so I could move
+  it to be closer to the img*/
+#body-info h1 {
+    background-color: rgb(138, 18, 18);
+    position: relative;
+    left:350px;
+    bottom:80px;
+    color:white;
+    font-size:40px;
+    padding:20px;
+    width:35%;
+    margin-bottom: 0;
+}
+/*Made this text also relative to make moving it easier*/
+#body-info h2 {
+    position: relative;
+    bottom:50px;
+    width:44%;
+    align-items: center;
+    left:600px;
+    margin:0;
+    padding:0;
+}
+#body-info p {
+    position: relative;
+    left: 600px;
+    bottom: 30px;
+    width: 45%;
+    margin: 0;
+}
+/*The second-body contains the split image and text on right
+  I made it into a flex in order to complish this*/
+#second-body {
+    display:flex;
+    background-color: rgb(138, 18, 18);
+    color:white;
+    align-items: flex-start;
+}
+#second-body img {
+    margin:0;
+    flex:2;
+    width:50%;
+}
+#second-body .flex-container {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+    padding:10px;
+}
+/*Along with strength I used xx-large to make the text bigger like the orginal website*/
+#second-body h2 {
+    margin:0;
+    font-size: xx-large;
+    margin-top:65px;
+    padding:25px;
+    padding-bottom:10px;
+}
+#second-body p {
+    line-height:120%;
+    flex:1;
+    width:40%;
+    text-wrap: wrap;
+    padding:25px;
+    padding-bottom:30px;
+    
+}
+#second-body nav {
+    margin:0;
+    padding:0;
+    align-self: left;
+}
+#second-body nav a {
+    text-decoration: none;
+    border: solid 3px white;
+    padding:25px;
+    margin:5px;
+    background-color: black;
+    color:white;
+    font-size: x-large;
+}
+/*The third body is the educational investment part for this one I used
+  a lot of padding to get the text where I wanted it for the smaller screen
+  I reveresed it to make it easier to go from small to large screen*/
+#third-body {
+    background-color:rgb(228, 228, 228);
+}
+#third-body h1 {
+    margin:0;
+    color:rgb(138, 18, 18);
+    text-align: center;
+    font-size: xx-large;
+    padding:25px;
+    padding-top:60px;
+    padding-bottom: 5px;
+}
+#third-body p {
+    text-align: center;
+    width:45%;
+    line-height: 200%;
+    padding-left: 550px;
+}
+#third-body nav {
+    margin:0;
+    padding-left:800px;
+    padding-top:50px;
+    padding-bottom:100px;
+}
+#third-body nav a {
+    text-decoration: none;
+    padding:20px;
+    margin:5px;
+    background-color: rgb(138, 18, 18);
+    color:white;
+    font-size: x-large;
+}
+/*This was the next area, I centered all of the text and increased the font
+  size to better match the website*/
+#paying-school {
+    padding: 20px;
+    text-align: center;
+}
+#paying-school h1 {
+    color:rgb(138, 18, 18);
+    font-size: xx-large;
+}
+/*For the flexboxes I made it into rows and wraped it so when it gets to a smaller
+  screen it can change to a column*/
+.flexboxes {
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flexboxes div {
+    flex:1;
+    background-color: white;
+    text-decoration: none;
+    padding:20px;
+}
+.flexboxes img {
+    width:auto;
+    height:auto;
+    margin-bottom:15px;
+}
+.flexboxes h3 {
+    color:rgb(138, 18, 18);
+    margin-bottom: 10px;
+}
+.flexboxes a {
+    text-decoration: none;
+    color: rgb(138, 18, 18);
+}
+.flexboxes p {
+    width:75%;
+    padding-left:65px;
+    text-align: left;
+}
+/*I attempted to make it so the text underneath would be highlighted but
+  it only would do the top part*/
+.flexboxes a:hover {
+    background-color: gray;
+}
+#paying-school p {
+    margin-bottom:40px;
+}
+#paying-text {
+    text-align: center;
+    width: 50%;
+    padding-left: 450px;
+    line-height: 150%;
+}
+/*The next step part I moved the img to try to match the orginal website
+  I was unable to keep the bottom to stay with the img, but I used relative
+  postioning to align the img and double spaced the text to try to make it look
+  close to the orginal website*/
+#next-step {
+    background-color: black;
+    color:white;
+    display: flex;
+    text-align: left;
+    padding:20px;
+}
+#next-step img {
+    position: relative;
+    bottom:40px;
+    max-width: 100%;
+    height:auto;
+}
+#next-step h1 {
+    margin-bottom: 20px;
+    padding-left:25px;
+}
+#next-step p {
+    margin-bottom:30px;
+    width:50%;
+    padding-bottom: 50px;
+    padding-left:25px;
+    line-height: 200%;
+}
+#apply ul {
+    list-style-type: none;
+}
+#apply a {
+    text-decoration: none;
+    padding: 20px;
+    color:white;
+    background-color: rgb(138, 18, 18);
+    border: solid 3px white;
+}
+#apply a:hover {
+    background-color:white;
+    border: solid 2px rgb(138, 18, 18);
+    color:rgb(138, 18, 18);
+}
+/*I was unable to find out how to add the logo correctly, so to not make it 
+  look as bad I left it out. I was able to created the list and sperate them.
+  I tried to get them to wrap with flex-wrap, but they would not wrap only 6.*/
+#list-bottom {
+    padding-left:20px;
+    background-color:rgb(138, 18, 18);
+    color:white;
+    display: flex;
+}
+.list {
+    display:flex;
+    width:100%;
+}
+.list div {
+    flex:1;
+    margin-right:20px;
+}
+.list h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#schools ul, #divisions ul, #tool ul{
+    list-style-type: none;
+    display:flex;
+    flex:3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+    gap:10px;
+}
+#schools li, #divisions li, #tool li{
+    margin-bottom:10px;
+}
+#schools a, #divisions a, #tool a {
+    color:white;
+    text-decoration: none;
+}
+/*Media Quaries*/
+/*Attempted to make all the items center and look better when the screen was smaller
+  I was not able to get to everything*/
+@media only screen and (max-width:600px){
+    /*Majority of these changes the padding since I had some set to relative so I just adjusted
+      it back for a smaller screen to fit the length*/
+    #main-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #body-info h1 {
+        left:0px;
+        bottom:-10px;
+        width:100%;
+    }
+    #body-info h2 {
+        bottom:50px;
+        width:100%;
+        align-items: center;
+        left:0px;
+        top:25px;
+    }
+    #body-info p {
+        left: 0px;
+        bottom:-30px;
+        width:100%;
+        padding-bottom: 50px;
+    }
+    #third-body p {
+        width:100%;
+        text-align: left;
+        line-height: 200%;
+        padding-left: 15px;
+    }
+    #third-body nav {
+        padding-left:60px;
+    }
+    #paying-text {
+        text-align: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+}

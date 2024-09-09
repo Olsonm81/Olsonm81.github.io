@@ -1,0 +1,118 @@
+/*Structure*/
+:root {
+    --main-background-color:skyblue;
+    --gallery-back:aliceblue;
+    --primary-color:darkblue;
+    --secondary-color:skyblue;
+    --highlight-color:pink;
+}
+body {
+    background-color:skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:white;
+}
+
+.columns-all {
+    display: flex;
+}
+
+img {
+    max-width:100%;
+}
+/* Header */
+#main-header {
+    position:relative;
+}
+
+#main-img {
+    margin-right:5px;
+}
+/*Gallery*/
+#gallery section {
+    background-color:var(--gallery-back);
+    padding:10px;
+    margin:10px;
+}
+/*Ball animaiion*/
+#ball {
+    width:50px;
+    background:pink;
+    height:50px;
+    border-radius:50%;
+    animation-name:bouce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+@keyframes bouce {
+    0% {
+        background: magenta;
+        top:0;
+    }
+    25% {
+        background: cyan;
+    }
+    50% {
+        background: yellow;
+    }
+    75% {
+        background:red;
+        top:100px;
+    }
+    100% {
+        background: green;
+        top:0;
+    }
+}
+/*Login Menu*/
+#login-menu {
+    width:fit-content;
+    position: absolute;
+    top:3%;
+    right: 3%;
+}
+
+#login-menu ul {
+    list-style-type: none;
+    padding:5px;
+}
+
+#login-menu a {
+    text-decoration: none;
+    color:black;
+}
+
+#login-menu a:hover {
+    text-decoration:underline;
+}
+
+
+/*Larger Resolutions */
+@media only screen and (min-width:600px) {
+    #content {
+        width:70%;
+        margin:auto;
+    }
+    .columns {
+        display:flex;
+    }
+    #settings {
+        display:none;
+    }
+    #login-menu ul {
+        display:flex;
+    }
+    .one {
+        flex:1;
+    }
+    #gallery {
+        flex-wrap: wrap;
+    }
+    #gallery section {
+        flex: 30%;
+    }
+}
