@@ -1,0 +1,48 @@
+<!--By Matthew Olson CSCE 242-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Top of page with a way to get back to the main assignments and the main headers-->
+        <header id="head-line">
+            <a id="main-menu" href="../../index.html">Back to Main Menu</a>
+            <h1>Assignment 7</h1>
+            <h2>Introduction to JavaScript</h2>
+        </header>
+        <div class="main-context">
+           <!--Column that contains the counter with starting valur at 0-->
+           <div class="column">
+             <div class="counter">
+                <h2>Counter</h2>
+                <div id="count-val">0</div>
+             </div>
+           </div>
+           <!--Column that contains the random img generator-->
+           <div class="column">
+                <div class="rng-img">
+                    <h2>Random Image</h2>
+                    <img id="random-img" src="https://picsum.photos/200" alt="Random image that changes when page refreshes">
+                </div>
+           </div>
+           <!--Column for the slider bar-->
+           <div class="column">
+                <h2>Slider Move</h2>
+                <div class="slider-bar">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="range">
+                    <img id = "sliding-img" src="../03_assignment/images/200x200.gif" alt="200 by 200 placeholder image">
+                </div>
+           </div>
+        </div>
+        </section>
+            <!--Footer with copyright at bottom of site-->
+            <footer id="foot">
+                <p id="copyright">&copy; Matthew Olson</p>
+            </footer>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+
+</html>

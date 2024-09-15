@@ -1,0 +1,122 @@
+/*By Matthew Olson CSCE 242*/
+/*Root that contains all the colors*/
+:root {
+    --back-color:gray;
+    --main-menu-txt:black;
+    --main-menu-border:white;
+    --main-menu-background:lightgray;
+    --column-color:white;
+    --slider-color:#d3d3d3;
+    --slider-button:black;
+
+}
+/*Structure*/
+body {
+    background-color:var(--back-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Typography*/
+h1 {
+    text-align: center;
+    margin:30px;
+}
+
+h2 {
+   text-align: center;
+   margin-top:-20px;
+}
+h3 {
+    text-align: center;
+}
+#foot {
+    text-align: center;
+}
+/*Main-menu button*/
+#main-menu {
+    border: solid 2px var(--main-menu-border);
+    text-decoration: none;
+    background-color:var(--main-menu-background);
+    color: var(--main-menu-txt);
+    position: relative;
+    top:15px;
+    padding:5px;
+    margin:10px;
+}
+#head-line a:hover {
+    color: var(--back-color);
+    background-color: var(--main-menu-txt);
+}
+/*Body of site*/
+.main-context {
+    display:flex;
+    justify-content: space-between;
+    gap:100px;
+}
+.column {
+    flex:1;
+    background-color: var(--column-color);
+    padding:20px;
+    border-radius: 8px;
+}
+.column img {
+    display: block;
+}
+/*Clicker styling*/
+/*Made it so the clickable areas have a pointer to indicate that you can click
+  while also, putting the number in the center of the screen*/
+#count-val {
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    cursor:pointer;
+}
+/*Random img clicker*/
+/*Centered img and made it so when you hover it has a pointer*/
+.rng-img {
+    cursor: pointer;
+}
+#random-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Slider img bar styling*/
+.slider-bar {
+    width:100%;
+    position: relative;
+}
+/*adjusted height and size of sliding bar*/
+.slider {
+    width: 100%;
+    height: 25px;
+    background: var(--slider-color);
+  }
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--slider-button);
+}
+#sliding-img {
+    position:relative;
+    max-width: 100%;
+    left:0px;
+}
+/*footer*/
+#foot {
+    text-align: center;
+    
+}
+/*Media Queries*/
+@media only screen and (max-width:600px){
+    /*Smaller screens go into a column*/
+   .main-context {
+        flex-direction: column;
+   }
+   /*Adjusted for smaller sized screens*/
+   #count-val {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
