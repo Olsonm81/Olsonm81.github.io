@@ -2,58 +2,61 @@
 /*All pages section*/
 /*Root that contains all the colors*/
 :root {
+    /*body background*/
+    --body-background:whitesmoke;
     /*Colors for the navigation bar*/
-    --nav-border-color:black;
-    --nav-inside-background-color:grey;
+    --nav-border-color:darkred;
+    --nav-inside-background-color:#1E3A5F;
     --nav-text-color:white;
 
     /*Colors for main page info*/
-    --main-background-color:gray;
-    --main-border-color:black;
+    --main-background-color:lightgray;
+    --main-border-color:darkred;
     --main-mission-background-color:white;
-    --main-four-boxes-background-color:gray;
-    --main-four-boxes-border-color:black;
+    --main-four-boxes-background-color:skyblue;
+    --main-four-boxes-border-color:darkred;
     --main-four-boxes-text-color:white;
-    --main-four-boxes-text-background-color:black;
+    --main-four-boxes-text-background-color:#1E3A5F;
 
     /*Colors for about page*/
-    --about-background-color:gray;
+    --about-background-color:lightgray;
     --about-text-box-background-color:white;
-    --about-border-color:black;
+    --about-border-color:darkred;
 
     /*Colors for contact us page*/
     --contact-background-color:gray;
-    --contact-border-color:black;
+    --contact-border-color:darkred;
     --contact-textbox-color:white;
-    --contact-submit-background-color:white;
-    --contact-submit-hover-background-color:black;
-    --contact-submit-text-color:black;
+    --contact-submit-background-color:darkred;
+    --contact-submit-hover-background-color:#1E3A5F;
+    --contact-submit-text-color:white;
     --contact-submit-text-hover-color:white;
     --contact-submit-hover-border-color:white;
 
     /*Colors for gallery page*/
-    --gallery-background-color:gray;
+    --gallery-background-color:lightgray;
     --gallery-text-box-background-color:white;
-    --gallery-border-color:black;
+    --gallery-border-color:darkred;
 
     /*Colors for where we've been page*/
-    --map-border-color:black;
+    --map-border-color:darkred;
 
     /*Colors for training/certificate page*/
-    --train-background-color:gray;
+    --train-background-color:lightgray;
     --train-text-background-color:white;
-    --train-border-color:black;
-    --train-header-background-color:lightgray;
+    --train-border-color:darkred;
+    --train-header-background-color:skyblue;
 
     /*Colors for employee's page*/
-    --employee-background-color:gray;
-    --employee-border-color:black;
+    --employee-background-color:lightgray;
+    --employee-border-color:darkred;
     --employee-header-background-color:white;
     --employee-text-background-color:white;
 }
 /*Structure*/
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 /*Main-header styling*/
 #head-logo {
@@ -109,6 +112,7 @@ body {
 }
 #main-section img {
     margin-right:20px;
+    border:2px solid var(--main-border-color);
 }
 #mission {
     max-width: 500px;
@@ -175,6 +179,9 @@ body {
     flex-wrap: wrap;
     margin: 50px 50px;
 }
+.about-info img {
+    border:2px solid var(--about-border-color);
+}
 /*centers and adds padding to the text in the boxes*/
 #about-section h3 {
     text-align: center;
@@ -182,6 +189,7 @@ body {
 #about-section p {
     padding:20px;
 }
+
 /*color and warp each box with words*/
 #what-d {
     background-color: var(--about-text-box-background-color);
@@ -305,6 +313,9 @@ body {
     flex-wrap: wrap;
     margin: 50px 50px;
 }
+.gallery-info img {
+    border:2px solid var(--gallery-border-color);
+}
 #gallery-section h3 {
     text-align: center;
 }
@@ -357,3 +368,100 @@ body {
     padding:15px;
     margin:10px;
 }
+/*Visability*/
+.hidden {
+    display:none;
+}
+.hidden-small {
+    display:none;
+}
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+
+    /*main boxes changes*/
+    .boxes {
+        flex-direction: column;
+        gap:10px;
+    }
+    .small-columns {
+        width:96%;
+        padding:10px;
+    }
+    .small-columns img {
+        margin: 0px auto;
+    }
+    /*Main-header styling*/
+    #head-logo {
+        flex-direction: column;
+        padding:10px;
+    }
+    /*Main-nav styling*/
+    #main-bar ul{
+        flex-direction: column;
+        max-width: 100%;
+        padding:0px;
+    }
+
+    /*Misson-statement main section*/
+    #main-section {
+        flex-direction: column;
+        padding:20px;
+        max-width: 100%;
+    }
+    #mission {
+        width: 100%;
+        margin-top:20px;
+    }
+    /*About us page*/
+    /*main box on the page*/
+    #about-section {
+        width:85%;
+        padding:20px;
+        margin:10px auto;
+    }
+    .about-info {
+        flex-direction: column;
+        gap:20px;
+        margin: 20px 0;
+    }
+    /*Gallery section*/
+    #gallery-section {
+        width:85%;
+        padding:20px;
+        margin:10px auto;
+    }
+    .gallery-info {
+        flex-direction: column;
+        gap:20px;
+    }
+    /*Map section*/
+    .map-info img {
+        height:300px;
+    }
+    /*Employee page*/
+    .employee-info {
+        padding:10px;
+        width:100%;
+    }
+    #team-info {
+        flex-direction: column;
+    }
+    #team-info img {
+        width:90%;
+        margin:10px auto;
+    }
+    #team-info p {
+        width:90%;
+        margin:5px auto;
+    }
+    /*Contact us*/
+    .contact-info {
+        padding: 10px;
+        max-width:90%;
+    }
+    #submit a {
+        width:100%;
+        padding:10px;
+    }
+
+  }
