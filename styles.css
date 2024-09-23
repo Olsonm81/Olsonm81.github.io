@@ -45,12 +45,14 @@ p {
 }
 /*flex boxes*/
 /*.assignment-flex works to make sure that the size of the boxes are around the same and the text inside is centered*/
+/*Added flex wrap to ensure boxes don't go over the edge of the screen*/
 .assignment-flex {
     margin: 10px;
     padding:20px;
     font-size: large;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 /*used to change the div inside which affects the color and spacing while also making a black border around the assignments*/
 .assignment-flex > div {
@@ -85,6 +87,7 @@ p {
     font-size: large;
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .project-flex > div {

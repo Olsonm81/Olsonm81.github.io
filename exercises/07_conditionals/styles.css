@@ -1,0 +1,113 @@
+/* Structure */
+:root {
+    --ball-color:white;
+    --funds:50%;
+}
+body {
+    background-color: azure;
+  }
+  
+  #main-header {
+    padding: 10px 10px 0;
+    margin: 0 auto;
+    background-color: bisque;
+  }
+  
+  #main-content {
+    padding: 10px;
+    margin: 0 auto;
+    background-color: honeydew;
+  }
+  
+  #main-footer {
+    padding: 10px;
+    margin: auto;
+    background-color: bisque;
+  }
+  
+  /* Main Navigation */
+  #toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin: 6px 0;
+    cursor: pointer;
+  }
+
+  #main-nav ul {
+    padding-left: 0px;
+    margin: 0;
+  }
+  
+  #main-nav li {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  #main-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+  
+  #main-nav a:hover {
+    border-bottom: 1px solid black;
+  }
+  /* Thermoeter*/
+#funds-thermometer {
+  border:1px solid grey;
+  width:20px;
+  height:100px;
+  /*background: linear-gradient(45deg, red 15%, orange 30%, yellow 50%, green 75%, blue 100% )
+*/
+  background: linear-gradient(0deg, red 0% var(--funds), white var(--funds) 100%);
+}
+  /* Typography */
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .error {
+    color:red;
+  }
+
+
+  /*Visability*/
+  .hidden {
+    display:none;
+  }
+
+  .hidden-small {
+    display:none;
+  }
+/*Ball*/
+#ball {
+    width:50px;
+    background:var(--ball-color);
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+}
+  /* Larger Resolutions */
+  
+  @media only screen and (min-width: 600px) {
+    #toggle-nav {
+      display:none;
+    }
+
+    #main-nav li {
+      flex: 1;
+    }
+    .columns {
+      display: flex;
+    }
+    .hidden-small {
+        display:flex;
+    }
+  }
+  

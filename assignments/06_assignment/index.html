@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conditionals</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <a id="main-menu" href="../../index.html">Back to Main Menu</a>
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+        </header>
+        <div id="exercise">
+            <!--Used arrow text for the button in smaller screens-->
+            <div id="toggle-nav">
+                <div><p id="arrow">▼</p></div>
+            </div>
+            <nav id="nav-ex">
+                <ul>
+                    <li><a id="color-ex" href="#">Exercise 1</a></li>
+                    <li><a id="img-ex" href="#">Exercise 2</a></li>
+                    <!--Tested to ensure that when adding a exercise it will add proper spacing-->
+                    <!--<li><a href="#">Exercise 3</a></li>-->
+                </ul>
+            </nav>
+        </div>
+        <!--Section used for the color slider part of the assignment-->
+        <section>
+            <div id="color-slide">
+                <h3>Color Slider</h3>
+                <div class="slider-bar">
+                    <input type="range" min="0" max="225" value="0" class="slider" id="range">
+                    <p id="color-p"></p>
+                </div>
+            </div>
+        </section>
+        <!--Section used for the picture chooser part of the assignment-->
+        <section>
+            <div id="picture-choose">
+                <h3>Picture Chooser</h3>
+                <div id="buttons">
+                    <p><button id="small-pic">Small</button></p>
+                    <p><button id="med-pic">Medium</button></p>
+                    <p><button id="large-pic">Large</button></p>
+                </div>
+                <!--Left img src blank since it is initally not suppose to have an img and the javascript can add one based on the button press-->
+                <img id="rand-img" src="">
+            </div>
+        </section>
+        <footer class="foot">
+            <p>@Olsonm81.github.io</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
