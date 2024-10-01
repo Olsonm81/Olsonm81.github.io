@@ -1,0 +1,90 @@
+/*By Matthew Olson CSCE 242*/
+/* Structure */
+:root {
+    --background-color:azure;
+    --h1-color:darkcyan;
+    --h2-color:salmon;
+    --p-color:teal;
+
+    --exercise-p-color:darkcyan;
+    --footer-color:darkcyan;
+
+    --slider-background-color:black;
+    --slide-letters-color:white;
+    --slide-bar-color:white;
+    --slide-button-color:black;
+
+    --pic-background-color:rgb(236, 236, 166);
+    --pic-border-color:teal;
+
+    --main-menu-border:teal;
+    --main-menu-background:azure;
+    --main-menu-text:darkcyan;
+
+    --small-ex-icon:teal;
+}
+/*Main-menu button*/
+#main-menu {
+  border: solid 2px var(--main-menu-border);
+  text-decoration: none;
+  background-color:var(--main-menu-background);
+  color: var(--main-menu-txt);
+  position: relative;
+  top:5px;
+  padding:5px;
+  margin:0px;
+}
+
+/* Typography */
+body {
+  background-color: var(--background-color);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color:var(--h1-color);
+}
+
+h2 {
+  text-align: center;
+  color:var(--h2-color);
+}
+p {
+    color:var(--p-color);
+}
+
+/*Main parts of code*/
+
+#credit {
+    color:var(--p-color);
+    background-color:blanchedalmond;
+    border: 2px solid darkcyan;
+}
+#credit a {
+    color:var(--p-color);
+}
+
+
+
+/*footer*/
+.foot {
+  padding:2%;
+  text-align: center;
+}
+
+/*Visability*/
+.hidden {
+  display:none;
+}
+
+.hidden-small {
+  display:none;
+}
+
+
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+  
+}
+  
