@@ -3,7 +3,7 @@
 :root {
     --background-color:azure;
     --h1-color:darkcyan;
-    --h2-color:salmon;
+    --h2-h3-color:salmon;
     --p-color:teal;
 
     --exercise-p-color:darkcyan;
@@ -22,6 +22,9 @@
     --main-menu-text:darkcyan;
 
     --small-ex-icon:teal;
+
+    --main-use-border:darkcyan;
+    --main-use-background-color:blanchedalmond;
 }
 /*Main-menu button*/
 #main-menu {
@@ -39,6 +42,8 @@
 body {
   background-color: var(--background-color);
   font-family:Arial, Helvetica, sans-serif;
+  max-width: 70%;
+  margin: 0px auto;
 }
 
 h1 {
@@ -48,18 +53,48 @@ h1 {
 
 h2 {
   text-align: center;
-  color:var(--h2-color);
+  color:var(--h2-h3-color);
 }
+h3 {
+  text-align: center;
+  color:var(--h2-h3-color);
+}
+
 p {
     color:var(--p-color);
 }
 
 /*Main parts of code*/
+#text-About {
+  text-align: center;
+  border: 2px solid var(--main-use-border);
+  background-color: var(--main-use-background-color);
+}
+
+.pictures {
+  border:2px solid var(--main-use-border);
+  background-color: var(--main-use-background-color);
+  padding:20px;
+}
+#imgs {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  gap:20px;
+  padding:15px;
+  
+}
+#imgs img {
+  width:300px;
+  border: 2px solid var(--main-use-border);
+  height:500px;
+  cursor: pointer;
+}
 
 #credit {
     color:var(--p-color);
-    background-color:blanchedalmond;
-    border: 2px solid darkcyan;
+    background-color: var(--main-use-background-color);
+    border: 2px solid var(--main-use-border);
 }
 #credit a {
     color:var(--p-color);
@@ -81,10 +116,3 @@ p {
 .hidden-small {
   display:none;
 }
-
-
-/* Smaller Resolutions */
-@media only screen and (max-width: 600px) {
-  
-}
-  
