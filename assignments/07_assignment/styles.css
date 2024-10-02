@@ -62,7 +62,7 @@ h2 {
   text-align: center;
   color:var(--h2-color);
 }
-
+/*Line with draw button, stars txt and insert feild for the stars*/
 #star-line {
   background-color: var(--star-line-background);
   color: var(--star-line-color);

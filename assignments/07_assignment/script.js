@@ -51,10 +51,13 @@ document.getElementById("draw-button").onclick = () => {
     star.style.setProperty("--rng-bottom-position", rngBottom);
     star.style.setProperty("--rng-left-position", rngLeft);
     star.style.setProperty("--rng-right-position", rngRight);
+
     //Alert  that occurs when clicking star has plus 1 since i starts at 0 and it would show star 0
-    /*star.onclick = () => {
-      negNum.innerHTML = `hi`;
-    }*/
+    //Removes the hidden so that the user is able to see it
+    star.onclick = () => {
+      negNum.innerHTML = `This is star number: ${i+1}`;
+      negNum.classList.remove("hidden");
+    }
   };
     
 }
