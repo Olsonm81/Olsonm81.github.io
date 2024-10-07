@@ -1,0 +1,142 @@
+/*By Matthew Olson CSCE 242*/
+/* Structure */
+:root {
+  --background-color:azure;
+  --h1-color:darkcyan;
+  --h2-color:salmon;
+  --p-color:rgb(245, 164, 155);
+
+  --exercise-p-color:darkcyan;
+  --footer-color:black;
+  --credit-color:darkcyan;
+  --bird-box:aqua;
+  --modal-background-color:rgba(0, 0, 0, 0.6);
+
+  --main-menu-border:teal;
+  --main-menu-background:azure;
+  --main-menu-text:darkcyan;
+}
+/*Main-menu button*/
+#main-menu {
+border: solid 2px var(--main-menu-border);
+text-decoration: none;
+background-color:var(--main-menu-background);
+color: var(--main-menu-txt);
+position: relative;
+top:5px;
+padding:5px;
+margin:0px;
+}
+
+/* Typography */
+body {
+background-color: var(--background-color);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+text-align: center;
+color:var(--h1-color);
+}
+
+h2 {
+text-align: center;
+color:var(--h2-color);
+}
+
+#credit {
+  text-align: center;
+  color: var(--credit-color);
+}
+
+#credit a {
+  text-decoration: none;
+  color: var(--credit-color);
+}
+
+/*For each bird box container*/
+#bird-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+/*Inside of each box to center and add color to the background etc...*/
+.Bird {
+  text-align: center;
+  background-color: var(--bird-box);
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  margin:25px;
+}
+/*Fix img size inside boxes*/
+.columns img {
+  width:200px;
+  height:150px;
+}
+/*Ensures that modal covers entire site and background color changes*/
+#bird-modal {
+  position:absolute;
+  bottom:5%;
+  width:100%;
+  height:150%;
+  background-color: var(--modal-background-color);
+}
+/*Actual box modal that has the information*/
+.bird-info {
+  position: relative;
+  top:50%;
+  opacity: 1;
+  background-color: gray;
+  margin: 25px auto;
+  padding: 20px;
+  width:80%;
+  max-width: 600px;
+}
+/*Img that is inside the modal positioning set to ensure it stays in the middle right of the modal*/
+#birdImg {
+  width:200px;
+  height:150px;
+  position: absolute;
+  bottom:30%;
+  left:55%;
+}
+
+
+/*footer*/
+.foot {
+padding:2%;
+color: var(--footer-color);
+text-align: center;
+}
+
+
+/*Visability*/
+.hidden {
+display:none;
+}
+
+.hidden-small {
+display:none;
+}
+
+
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+  /*Ensured img fit in the box when small*/
+  #birdImg {
+    width:160px;
+    left:58%;
+  }
+  /*Could not figure out how to make it so the opacity goes to bottom of page when smaller resoultion
+  /*#bird-modal {
+    position:absolute;
+    bottom:5%;
+    width:100%;
+    height:150%;
+  }*/
+}
