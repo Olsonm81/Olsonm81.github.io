@@ -144,7 +144,8 @@ body {
     border: 2px solid var(--main-four-boxes-border-color);
 }
 .small-columns img {
-    height: auto;
+    width: 300px;
+    height:200px;
     display: block;
     margin: 10px;
 }
@@ -375,6 +376,7 @@ body {
     margin-bottom:15px;
     padding:10px;
 }
+
 .employee-info img {
     display:flex;
     border:2px solid var(--employee-border-color);

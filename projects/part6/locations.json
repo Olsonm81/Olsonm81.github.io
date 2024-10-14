@@ -1,0 +1,31 @@
+[
+    {
+        "state": "Oregon",
+        "city": "Durkee",
+        "f-or-e": "Fire",
+        "date": "",
+        "people": ["Jason"],
+        "description": "",
+        
+        "images": [
+            "#40231D",
+            "#592202",
+            "#8C4B26"
+        ]
+    },
+    {
+        "state": "Idaho",
+        "city": "Limepoint",
+        "f-or-e": "Fire",
+        "date":"August 15th 2024",
+        "people": ["Junior", "Adam"],
+        "description": "Assisted with the removal of trees that feel during the fire. Also, helped reduced the spread of the fire to other parts of the National Forest.",
+        
+        "images": [
+            "#40231D",
+            "#592202",
+            "#8C4B26"
+        ]
+    }
+    
+]
