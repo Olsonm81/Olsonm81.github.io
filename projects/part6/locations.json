@@ -5,12 +5,12 @@
         "f-or-e": "Fire",
         "date": "",
         "people": ["Jason"],
-        "description": "",
+        "description": "Our team was task with going to Washington state to put out several fires in the local area. We were able to accomplish this mission and were successful in putting out the fire that was widespread. While there we were able to provide critical support and medical care to the local community.",
         
         "images": [
-            "#40231D",
-            "#592202",
-            "#8C4B26"
+            "images/washington-fire-gallery.jpg",
+            "",
+            ""
         ]
     },
     {
