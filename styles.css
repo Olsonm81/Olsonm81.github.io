@@ -79,6 +79,9 @@ p {
     height:150px;
     display: block;
 }
+#server-11{
+    text-align: center;
+}
 
 /*Project flex-boxes*/
 .project-flex {
