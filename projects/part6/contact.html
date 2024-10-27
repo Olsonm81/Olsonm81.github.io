@@ -23,7 +23,8 @@
             </ul>
         </nav>
         <section id="contact-section">
-            <div class="contact-info" id="contact-form">
+          <!--Creates the contact form-->
+            <div class="contact-info" id="contact-information">
               <h3>Reach out to find more!</h3>
               <form
                 id="contact-form"
@@ -67,8 +68,12 @@
                     />
                 </p>
                 <p>
-                  <label for="message">Comments:</label>
-                  <textarea id="message" name="message" placeholder="Type here"></textarea>
+                  <label for="Interested in">Interested in:</label>
+                  <textarea id="interest" name="Interested in" placeholder="I'm interested in..."></textarea>
+                </p>
+                <p>
+                  <label for="Other Notes">Other Notes:</label>
+                  <textarea id="otherNotes" name="Other Notes" placeholder="Other notes"></textarea>
                 </p>
                 <input
                   type="hidden"
@@ -80,16 +85,54 @@
                   name="subject"
                   value="Contact from ERFM LLC"
                 />
+                <!--Where it adds the result of sending..., sent, could not send-->
+                <p id="result" class="hidden" ><strong></strong></p>
+
                 <input type="hidden" name="from_name" value="My Website" />
-                <nav id="submit">
-                    <ul>
-                        <li><button type="submit"><Strong>Submit</Strong></button></li>
-                    </ul>
-                </nav>
-                <p class="hidden" id="result"></p>
+                <!--Made to help with css code with the button-->
+                <div id="center-submit">
+                  <button id="submit" type="submit"><Strong>Submit</Strong></button>
+                </div>
               </form>
             </div>
+            <!--Shows all of the contact information of the LLC-->
+            <div id="ourInfo-Location">
+              <div class="contact-info" id="ourInfo">
+                <h3>Where you can find us!</h3>
+                <div id="address">
+                  <img src="./images/location.png" alt="Drop pin icon">
+                  <p>Spartanburg, SC, 29301</p>
+                </div>
+                <div id="phoneNumber">
+                  <img src="./images/telephone-symbol-button.png" alt="Phone icon">
+                  <p>1-760-445-4477</p>
+                </div>
+                <div id="emailUs">
+                  <img src="./images/email.png" alt="email icon">
+                  <p>ERFMLLC@gmail.com</p>
+                </div>
+              </div>
+              <!--Added google map to show where the city is of where the business is located at-->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52330.803410176435!2d-81.966330448413!3d34.93968164573733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88579e19a697460b%3A0x5b8b2838cada7ec9!2sSpartanburg%2C%20SC!5e0!3m2!1sen!2sus!4v1730046972937!5m2!1sen!2sus"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+            
         </section>
+        <!--Copyright information about the icons I used and for the LLC-->
+        <footer class="contact-info" id="contactFooter">
+          <p>Icons created by: <br>
+            <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Dave Gandy - Flaticon</a> <br>
+            <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Uniconlabs - Flaticon</a> <br>
+            <a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a> <br>
+              Emergency Response Fire Medical, LLC <br>
+              Spartanburg, South Carolina, United States <br>
+              1-760-445-4477 <br>
+              Copyright © 2024 Emergency Response Fire Medical, LLC - All Rights Reserved.</p>
+        </footer>
         <script src="contact.js"></script>
     </body>
 </html>
