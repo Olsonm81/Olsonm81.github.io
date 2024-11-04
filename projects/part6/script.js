@@ -1,41 +1,12 @@
-//Was not able to get the seperate json file working so, I added it to the script
-const locations = [
-    {
-        "state": "Washington Deployment",
-        "city": "Durkee",
-        "f-or-e": "Fire",
-        "date": "",
-        "people": ["Jason"],
-        "description": "Our team was task with going to Washington state to put out several fires in the local area. We were able to accomplish this mission and were successful in putting out the fire that was widespread. While there we were able to provide critical support and medical care to the local community.",
-        
-        "images": [
-            "washington-fire-gallery.jpg",
-            "",
-            ""
-        ]
-    },
-    //Working to be able to have multiple gallery entries work and maybe the map
-    /*{
-        "state": "Idaho",
-        "city": "Limepoint",
-        "f-or-e": "Fire",
-        "date":"August 15th 2024",
-        "people": ["Junior", "Adam"],
-        "description": "Assisted with the removal of trees that feel during the fire. Also, helped reduced the spread of the fire to other parts of the National Forest.",
-        
-        "images": [
-            "#40231D",
-            "#592202",
-            "#8C4B26"
-        ]
-    }*/
-    
-]
 // gets the loction informaiton
-const getLocations = async () => {
-        locations.forEach(location => {
-            showLocation(location);
-        });
+const getLocations = async (e) => {
+    try {
+        const response = ( await fetch("locations.json")).json();
+        } 
+        catch(error) {
+            console.log(error);
+            return;
+        }
 };
 
 
